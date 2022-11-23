@@ -1,0 +1,48 @@
+2022/11/22 18:32:38 [error] 29#29: *1 open() "/usr/src/app/static//js/main.4f094f6e.js" failed (2: No such file or directory), client: 76.153.143.190, server: localhost, request: "GET /static/js/main.4f094f6e.js HTTP/1.1", host: "52.90.144.5", referrer: "http://52.90.144.5/"
+2022/11/22 18:32:38 [error] 29#29: *2 open() "/usr/src/app/static//css/main.a9a7d692.css" failed (2: No such file or directory), client: 76.153.143.190, server: localhost, request: "GET /static/css/main.a9a7d692.css HTTP/1.1", host: "52.90.144.5", referrer: "http://52.90.144.5/"
+2022/11/22 18:34:43 [error] 29#29: *3 open() "/usr/src/app/static//js/main.4f094f6e.js" failed (2: No such file or directory), client: 76.153.143.190, server: localhost, request: "GET /static/js/main.4f094f6e.js HTTP/1.1", host: "52.90.144.5", referrer: "http://52.90.144.5/"
+2022/11/22 18:34:43 [error] 29#29: *4 open() "/usr/src/app/static//css/main.a9a7d692.css" failed (2: No such file or directory), client: 76.153.143.190, server: localhost, request: "GET /static/css/main.a9a7d692.css HTTP/1.1", host: "52.90.144.5", referrer: "http://52.90.144.5/"
+2022/11/22 18:34:53 [error] 29#29: *4 open() "/usr/src/app/static//js/main.4f094f6e.js" failed (2: No such file or directory), client: 76.153.143.190, server: localhost, request: "GET /static/js/main.4f094f6e.js HTTP/1.1", host: "52.90.144.5", referrer: "http://52.90.144.5/"
+2022/11/22 18:34:53 [error] 29#29: *3 open() "/usr/src/app/static//css/main.a9a7d692.css" failed (2: No such file or directory), client: 76.153.143.190, server: localhost, request: "GET /static/css/main.a9a7d692.css HTTP/1.1", host: "52.90.144.5", referrer: "http://52.90.144.5/"
+2022/11/22 19:34:31 [notice] 1#1: using the "epoll" event method
+2022/11/22 19:34:31 [notice] 1#1: nginx/1.23.2
+2022/11/22 19:34:31 [notice] 1#1: built by gcc 10.2.1 20210110 (Debian 10.2.1-6) 
+2022/11/22 19:34:31 [notice] 1#1: OS: Linux 5.15.0-1022-aws
+2022/11/22 19:34:31 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2022/11/22 19:34:31 [notice] 1#1: start worker processes
+2022/11/22 19:34:31 [notice] 1#1: start worker process 29
+2022/11/22 21:50:39 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2022/11/22 21:50:39 [notice] 29#29: gracefully shutting down
+2022/11/22 21:50:39 [notice] 29#29: exiting
+2022/11/22 21:50:39 [notice] 29#29: exit
+2022/11/22 21:50:39 [notice] 1#1: signal 17 (SIGCHLD) received from 29
+2022/11/22 21:50:39 [notice] 1#1: worker process 29 exited with code 0
+2022/11/22 21:50:39 [notice] 1#1: exit
+2022/11/22 21:51:39 [notice] 1#1: using the "epoll" event method
+2022/11/22 21:51:39 [notice] 1#1: nginx/1.23.2
+2022/11/22 21:51:39 [notice] 1#1: built by gcc 10.2.1 20210110 (Debian 10.2.1-6) 
+2022/11/22 21:51:39 [notice] 1#1: OS: Linux 5.15.0-1022-aws
+2022/11/22 21:51:39 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2022/11/22 21:51:39 [notice] 1#1: start worker processes
+2022/11/22 21:51:39 [notice] 1#1: start worker process 29
+2022/11/23 03:36:13 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2022/11/23 03:36:13 [notice] 29#29: gracefully shutting down
+2022/11/23 03:36:13 [notice] 29#29: exiting
+2022/11/23 03:36:13 [notice] 29#29: exit
+2022/11/23 03:36:13 [notice] 1#1: signal 17 (SIGCHLD) received from 29
+2022/11/23 03:36:13 [notice] 1#1: worker process 29 exited with code 0
+2022/11/23 03:36:13 [notice] 1#1: exit
+2022/11/23 03:36:16 [notice] 1#1: using the "epoll" event method
+2022/11/23 03:36:16 [notice] 1#1: nginx/1.23.2
+2022/11/23 03:36:16 [notice] 1#1: built by gcc 10.2.1 20210110 (Debian 10.2.1-6) 
+2022/11/23 03:36:16 [notice] 1#1: OS: Linux 5.15.0-1022-aws
+2022/11/23 03:36:16 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2022/11/23 03:36:16 [notice] 1#1: start worker processes
+2022/11/23 03:36:16 [notice] 1#1: start worker process 29
+2022/11/23 04:01:16 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2022/11/23 04:01:16 [notice] 29#29: gracefully shutting down
+2022/11/23 04:01:16 [notice] 29#29: exiting
+2022/11/23 04:01:16 [notice] 29#29: exit
+2022/11/23 04:01:16 [notice] 1#1: signal 17 (SIGCHLD) received from 29
+2022/11/23 04:01:16 [notice] 1#1: worker process 29 exited with code 0
+2022/11/23 04:01:16 [notice] 1#1: exit
