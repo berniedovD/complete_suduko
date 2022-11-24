@@ -110,3 +110,61 @@
 2022/11/24 05:51:29 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
 2022/11/24 05:51:29 [notice] 1#1: start worker processes
 2022/11/24 05:51:29 [notice] 1#1: start worker process 29
+2022/11/24 16:52:01 [notice] 1#1: using the "epoll" event method
+2022/11/24 16:52:01 [notice] 1#1: nginx/1.23.2
+2022/11/24 16:52:01 [notice] 1#1: built by gcc 10.2.1 20210110 (Debian 10.2.1-6) 
+2022/11/24 16:52:01 [notice] 1#1: OS: Linux 5.15.0-1022-aws
+2022/11/24 16:52:01 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2022/11/24 16:52:01 [notice] 1#1: start worker processes
+2022/11/24 16:52:01 [notice] 1#1: start worker process 29
+2022/11/24 16:54:21 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2022/11/24 16:54:21 [notice] 29#29: gracefully shutting down
+2022/11/24 16:54:21 [notice] 29#29: exiting
+2022/11/24 16:54:21 [notice] 29#29: exit
+2022/11/24 16:54:21 [notice] 1#1: signal 17 (SIGCHLD) received from 29
+2022/11/24 16:54:21 [notice] 1#1: worker process 29 exited with code 0
+2022/11/24 16:54:21 [notice] 1#1: exit
+2022/11/24 16:54:24 [notice] 1#1: using the "epoll" event method
+2022/11/24 16:54:24 [notice] 1#1: nginx/1.23.2
+2022/11/24 16:54:24 [notice] 1#1: built by gcc 10.2.1 20210110 (Debian 10.2.1-6) 
+2022/11/24 16:54:24 [notice] 1#1: OS: Linux 5.15.0-1022-aws
+2022/11/24 16:54:24 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2022/11/24 16:54:24 [notice] 1#1: start worker processes
+2022/11/24 16:54:24 [notice] 1#1: start worker process 29
+2022/11/24 16:57:23 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2022/11/24 16:57:23 [notice] 29#29: gracefully shutting down
+2022/11/24 16:57:23 [notice] 29#29: exiting
+2022/11/24 16:57:23 [notice] 29#29: exit
+2022/11/24 16:57:23 [notice] 1#1: signal 17 (SIGCHLD) received from 29
+2022/11/24 16:57:23 [notice] 1#1: worker process 29 exited with code 0
+2022/11/24 16:57:23 [notice] 1#1: exit
+2022/11/24 16:58:08 [notice] 1#1: using the "epoll" event method
+2022/11/24 16:58:08 [notice] 1#1: nginx/1.23.2
+2022/11/24 16:58:08 [notice] 1#1: built by gcc 10.2.1 20210110 (Debian 10.2.1-6) 
+2022/11/24 16:58:08 [notice] 1#1: OS: Linux 5.15.0-1022-aws
+2022/11/24 16:58:08 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2022/11/24 16:58:08 [notice] 1#1: start worker processes
+2022/11/24 16:58:08 [notice] 1#1: start worker process 29
+2022/11/24 16:59:51 [error] 29#29: *1 "/usr/share/nginx/html/polls/index.html" is not found (2: No such file or directory), client: 76.153.143.190, server: localhost, request: "GET /polls/ HTTP/1.1", host: "52.90.144.5"
+2022/11/24 16:59:58 [error] 29#29: *1 "/usr/share/nginx/html/admin/index.html" is not found (2: No such file or directory), client: 76.153.143.190, server: localhost, request: "GET /admin/ HTTP/1.1", host: "52.90.144.5"
+2022/11/24 17:00:02 [error] 29#29: *1 "/usr/share/nginx/html/polls/index.html" is not found (2: No such file or directory), client: 76.153.143.190, server: localhost, request: "GET /polls/ HTTP/1.1", host: "52.90.144.5"
+2022/11/24 17:00:08 [error] 29#29: *1 "/usr/share/nginx/html/suduko/puzzles/index.html" is not found (2: No such file or directory), client: 76.153.143.190, server: localhost, request: "GET /suduko/puzzles/ HTTP/1.1", host: "52.90.144.5"
+2022/11/24 17:00:13 [error] 29#29: *1 "/usr/share/nginx/html/suduko/puzzleDB/index.html" is not found (2: No such file or directory), client: 76.153.143.190, server: localhost, request: "GET /suduko/puzzleDB/ HTTP/1.1", host: "52.90.144.5"
+2022/11/24 17:00:39 [error] 29#29: *1 "/usr/share/nginx/html/suduko/puzzleDB/index.html" is not found (2: No such file or directory), client: 76.153.143.190, server: localhost, request: "GET /suduko/puzzleDB/ HTTP/1.1", host: "52.90.144.5"
+2022/11/24 17:01:28 [error] 29#29: *1 "/usr/share/nginx/html/suduko/puzzleDB/index.html" is not found (2: No such file or directory), client: 76.153.143.190, server: localhost, request: "GET /suduko/puzzleDB/ HTTP/1.1", host: "52.90.144.5"
+2022/11/24 17:10:18 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2022/11/24 17:10:18 [notice] 29#29: gracefully shutting down
+2022/11/24 17:10:18 [notice] 29#29: exiting
+2022/11/24 17:10:18 [notice] 29#29: exit
+2022/11/24 17:10:18 [notice] 1#1: signal 17 (SIGCHLD) received from 29
+2022/11/24 17:10:18 [notice] 1#1: worker process 29 exited with code 0
+2022/11/24 17:10:18 [notice] 1#1: exit
+2022/11/24 17:12:37 [notice] 1#1: using the "epoll" event method
+2022/11/24 17:12:37 [notice] 1#1: nginx/1.23.2
+2022/11/24 17:12:37 [notice] 1#1: built by gcc 10.2.1 20210110 (Debian 10.2.1-6) 
+2022/11/24 17:12:37 [notice] 1#1: OS: Linux 5.15.0-1022-aws
+2022/11/24 17:12:37 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2022/11/24 17:12:37 [notice] 1#1: start worker processes
+2022/11/24 17:12:37 [notice] 1#1: start worker process 22
+2022/11/24 17:12:54 [error] 22#22: *2 "/usr/share/nginx/html/polls/index.html" is not found (2: No such file or directory), client: 76.153.143.190, server: localhost, request: "GET /polls/ HTTP/1.1", host: "52.90.144.5"
+2022/11/24 17:12:57 [error] 22#22: *4 open() "/usr/share/nginx/html/.env" failed (2: No such file or directory), client: 135.125.217.54, server: localhost, request: "GET /.env HTTP/1.1", host: "52.90.144.5"
