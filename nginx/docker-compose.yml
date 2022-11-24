@@ -1,0 +1,11 @@
+version: '3.6'
+services:
+   nginx:
+     build:
+      context: .
+     ports:
+       - "80:80"
+     volumes:
+       - /home/django/project3_new/logs/:/var/log/nginx/:rw
+
+
