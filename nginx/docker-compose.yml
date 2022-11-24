@@ -1,13 +1,12 @@
 version: '3.6'
 services:
    nginx:
-     image: nginx
+     build: 
+       context: .    
      ports:
        - "80:80"
      volumes:
        - /home/django/project3_new/logs/:/var/log/nginx/:rw
-       - /home/django/project3_new/nginx/suduko_build/:/usr/share/nginx/html/:ro
-       - /home/django/project3_new/nginx/:/config/:rw
-     entrypoint: /config/docker-entrypoint.sh
+       - /home/django/project3_new/nginx/suduko_build/:/usr/src/app/html/:ro
 
 

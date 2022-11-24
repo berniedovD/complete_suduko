@@ -88,3 +88,11 @@
 2022/11/24 05:01:24 [notice] 1#1: signal 17 (SIGCHLD) received from 29
 2022/11/24 05:01:24 [notice] 1#1: worker process 29 exited with code 0
 2022/11/24 05:01:24 [notice] 1#1: exit
+2022/11/24 05:43:41 [emerg] 1#1: unexpected end of file, expecting "}" in /etc/nginx/nginx.conf:65
+2022/11/24 05:44:39 [notice] 1#1: using the "epoll" event method
+2022/11/24 05:44:39 [notice] 1#1: nginx/1.23.2
+2022/11/24 05:44:39 [notice] 1#1: built by gcc 10.2.1 20210110 (Debian 10.2.1-6) 
+2022/11/24 05:44:39 [notice] 1#1: OS: Linux 5.15.0-1022-aws
+2022/11/24 05:44:39 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2022/11/24 05:44:39 [notice] 1#1: start worker processes
+2022/11/24 05:44:39 [notice] 1#1: start worker process 28
