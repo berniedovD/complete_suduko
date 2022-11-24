@@ -33,3 +33,5 @@
 2022/11/24 04:07:57 [error] 29#29: *3 "/usr/src/app/suduko_build/index.html" is not found (2: No such file or directory), client: 198.235.24.138, server: localhost, request: "GET / HTTP/1.1", host: "52.90.144.5:80"
 2022/11/24 04:10:20 [error] 29#29: *4 "/usr/src/app/suduko_build/src/index.html" is not found (2: No such file or directory), client: 4.246.226.47, server: localhost, request: "GET /src/ HTTP/1.1", host: "52.90.144.5"
 2022/11/24 04:16:27 [error] 29#29: *5 "/usr/src/app/suduko_build/index.html" is not found (2: No such file or directory), client: 106.75.81.167, server: localhost, request: "GET / HTTP/1.1", host: "52.90.144.5"
+2022/11/24 05:51:45 [error] 29#29: *1 connect() failed (111: Connection refused) while connecting to upstream, client: 66.23.227.23, server: localhost, request: "GET /polls HTTP/1.1", upstream: "http://52.90.144.5:8000/polls", host: "52.90.144.5"
+2022/11/24 05:51:46 [error] 29#29: *4 connect() failed (111: Connection refused) while connecting to upstream, client: 173.44.117.69, server: localhost, request: "GET /polls HTTP/1.1", upstream: "http://52.90.144.5:8000/polls", host: "52.90.144.5", referrer: "https://www.google.com/"
