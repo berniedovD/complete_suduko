@@ -53,3 +53,38 @@
 2022/11/24 04:03:06 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
 2022/11/24 04:03:06 [notice] 1#1: start worker processes
 2022/11/24 04:03:06 [notice] 1#1: start worker process 29
+2022/11/24 04:42:34 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2022/11/24 04:42:34 [notice] 29#29: gracefully shutting down
+2022/11/24 04:42:34 [notice] 29#29: exiting
+2022/11/24 04:42:34 [notice] 29#29: exit
+2022/11/24 04:42:34 [notice] 1#1: signal 17 (SIGCHLD) received from 29
+2022/11/24 04:42:34 [notice] 1#1: worker process 29 exited with code 0
+2022/11/24 04:42:34 [notice] 1#1: exit
+2022/11/24 04:46:09 [notice] 1#1: using the "epoll" event method
+2022/11/24 04:46:09 [notice] 1#1: nginx/1.23.2
+2022/11/24 04:46:09 [notice] 1#1: built by gcc 10.2.1 20210110 (Debian 10.2.1-6) 
+2022/11/24 04:46:09 [notice] 1#1: OS: Linux 5.15.0-1022-aws
+2022/11/24 04:46:09 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2022/11/24 04:46:09 [notice] 1#1: start worker processes
+2022/11/24 04:46:09 [notice] 1#1: start worker process 29
+2022/11/24 04:54:08 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2022/11/24 04:54:08 [notice] 29#29: gracefully shutting down
+2022/11/24 04:54:08 [notice] 29#29: exiting
+2022/11/24 04:54:08 [notice] 29#29: exit
+2022/11/24 04:54:08 [notice] 1#1: signal 17 (SIGCHLD) received from 29
+2022/11/24 04:54:08 [notice] 1#1: worker process 29 exited with code 0
+2022/11/24 04:54:08 [notice] 1#1: exit
+2022/11/24 04:59:25 [notice] 1#1: using the "epoll" event method
+2022/11/24 04:59:25 [notice] 1#1: nginx/1.23.2
+2022/11/24 04:59:25 [notice] 1#1: built by gcc 10.2.1 20210110 (Debian 10.2.1-6) 
+2022/11/24 04:59:25 [notice] 1#1: OS: Linux 5.15.0-1022-aws
+2022/11/24 04:59:25 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2022/11/24 04:59:25 [notice] 1#1: start worker processes
+2022/11/24 04:59:25 [notice] 1#1: start worker process 29
+2022/11/24 05:01:24 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2022/11/24 05:01:24 [notice] 29#29: gracefully shutting down
+2022/11/24 05:01:24 [notice] 29#29: exiting
+2022/11/24 05:01:24 [notice] 29#29: exit
+2022/11/24 05:01:24 [notice] 1#1: signal 17 (SIGCHLD) received from 29
+2022/11/24 05:01:24 [notice] 1#1: worker process 29 exited with code 0
+2022/11/24 05:01:24 [notice] 1#1: exit
