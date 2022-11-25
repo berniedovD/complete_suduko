@@ -19,7 +19,7 @@ services:
      volumes:
        - /home/django/project3_new/static/:/usr/src/app/static/:rw
        - /home/django/project3_new/logs/:/var/log/nginx/:rw
-       - /home/django/project3_new/nginx/suduko_build/:/usr/share/nginx/html/:ro
+       - /home/django/project3_new/sudukoreact/build/:/usr/share/nginx/html/:ro
      depends_on:
        - app
 
