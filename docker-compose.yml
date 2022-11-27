@@ -20,7 +20,7 @@ services:
        - /home/django/project3_new/static/:/usr/src/app/static/:rw
        - /home/django/project3_new/logs/:/var/log/nginx/:rw
        - /home/django/project3_new/sudukoreact/build/:/usr/share/nginx/html/:ro
-         #- /home/django/project3_new/nginx/samplehtml/:/usr/share/nginx/html/:ro
+       - /home/django/project3_new/nginx/samplehtml/:/usr/share/nginx/samplehtml/:ro
      depends_on:
        - app
 
