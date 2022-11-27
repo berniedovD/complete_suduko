@@ -4,7 +4,7 @@ from django.http import HttpResponse
 
 
 def dlog(message):
-    f1 = open("./logs/django.log", "a")
+    f1 = open("/logs/django.log", "a")
     print (message)
     f1.write(message + "\n")
 def index(request):

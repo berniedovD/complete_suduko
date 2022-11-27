@@ -7,6 +7,7 @@ services:
        - "8000:8888"
      volumes:
        - static:/usr/src/app/static/:rw
+       - djangologs:/logs/:rw
      depends_on:
        - mysqldb
 
@@ -16,8 +17,8 @@ services:
      ports:
        - "80:80"
      volumes:
-       - ./static/:/usr/src/app/static/:rw
-       - ./logs/:/var/log/nginx/:rw
+       - static:/usr/src/app/static/:rw
+       - logs:/var/log/nginx/:rw
        - ./sudukoreact/build/:/usr/share/nginx/html/:ro
        - ./nginx/samplehtml/:/usr/share/nginx/samplehtml/:ro
      depends_on:
@@ -36,4 +37,5 @@ services:
 volumes:
   logs:
   static:
+  djangologs:
 
