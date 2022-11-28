@@ -30,26 +30,28 @@ services:
    mysqldb: 
       image: mysql
       ports: 
-        - "3306:3306"
+        - "33063:3306"
       volumes: 
         - sudukomysql:/var/lib/mysql
-        - ./scripts/createuser.sql:/docker-entrypoint-initdb.d/1.sql
+          #- ./scripts/createuser.sql:/docker-entrypoint-initdb.d/1.sql
       environment:
         MYSQL_ROOT_PASSWORD: tortola1 
         MYSQL_DATABASE: appdb
 
-   oldmysqldb: 
+
+   omsql: 
       image: mysql
       ports: 
-        - "8306:3306"
+        - "33062:3306"
       volumes: 
-        - /home/dov/data/:/var/lib/mysql
+        - sudukomysql2:/var/lib/mysql
       environment:
         MYSQL_ROOT_PASSWORD: tortola1 
-
+        MYSQL_DATABASE: appdb
 volumes:
    logs:
    static:
    djangologs:
    sudukomysql:
+   sudukomysql2:
 
