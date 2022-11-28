@@ -35,7 +35,8 @@ export function getPuzzleListfromAPI(
   URL = "http://35.153.177.177:8000/suduko/puzzleDB";
   URL = "http://52.90.144.5/suduko/puzzleDB";
   let hostip = "54.224.90.36";
-  URL = "http://54.224.90.36/suduko/puzzleDB";
+  hostip = "54.158.55.239";
+  URL = hostip + "/suduko/puzzleDB";
 
   console.log("in getPuzzleListfromAPI");
   console.log("running new version 10/30/2022");
