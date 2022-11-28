@@ -4,7 +4,7 @@ from sqlalchemy.engine.url import URL
 
 hostname = r'52.90.144.5'
 
-dbport  = r'3306'
+dbport  = r'8306'
 dbname = 'appdb'
 dbuser = 'appdbuser'
 dbpwd = 'tortola1'
@@ -20,3 +20,5 @@ db_engine = create_engine(dburl)
 dbconn = db_engine.connect()
 
 puzlist = pd.read_sql('select * from sudukoapi_puzzle', dbconn)
+
+print (puzlist)
