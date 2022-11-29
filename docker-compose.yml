@@ -10,6 +10,8 @@ services:
        - djangologs:/logs/:rw
      environment:
        DJANGO_SUPERUSER_PASSWORD: tortola1
+     depends_on:
+       - mysqldb
 
    nginx:
      build:
@@ -27,7 +29,7 @@ services:
    mysqldb: 
       image: mysql
       ports: 
-        - "33063:3306"
+        - "3306:3306"
       volumes: 
         - sudukomysql:/var/lib/mysql
         - ./scripts/createuser.sql:/docker-entrypoint-initdb.d/1.sql

@@ -96,7 +96,7 @@ DATABASES = {
         'NAME': 'appdb',
         'USER': 'appdbuser',
         'PASSWORD': 'tortola1',
-        'HOST': '52.90.144.5',
+        'HOST': '54.158.55.239',
         'PORT': '3306'
     }
 }
