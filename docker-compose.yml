@@ -19,9 +19,9 @@ services:
      volumes:
        - static:/usr/src/app/static/:rw
        - ./logs/:/var/log/nginx/:rw
-         #- ./sudukoreact/build/:/usr/share/nginx/html/:ro
-         #- ./nginx/samplehtml/:/usr/share/nginx/samplehtml/:ro
-       - ./nginx/samplehtml/:/usr/share/nginx/html/:ro
+       - ./sudukoreact/build/:/usr/share/nginx/html/:ro
+       - ./nginx/samplehtml/:/usr/share/nginx/samplehtml/:ro
+         #- ./nginx/samplehtml/:/usr/share/nginx/html/:ro
 
 
    mysqldb: 
