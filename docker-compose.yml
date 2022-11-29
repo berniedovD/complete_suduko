@@ -10,8 +10,6 @@ services:
        - djangologs:/logs/:rw
      environment:
        DJANGO_SUPERUSER_PASSWORD: tortola1
-     depends_on:
-       - mysqldb
 
    nginx:
      build:
@@ -23,8 +21,6 @@ services:
        - logs:/var/log/nginx/:rw
        - ./sudukoreact/build/:/usr/share/nginx/html/:ro
        - ./nginx/samplehtml/:/usr/share/nginx/samplehtml/:ro
-     depends_on:
-       - app
 
 
    mysqldb: 
