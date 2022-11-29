@@ -25,6 +25,9 @@ services:
        - ./nginx/samplehtml/:/usr/share/nginx/samplehtml/:ro
          #- ./nginx/samplehtml/:/usr/share/nginx/html/:ro
 
+     depends_on:
+       - app
+
 
    mysqldb: 
       image: mysql
