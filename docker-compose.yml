@@ -33,7 +33,7 @@ services:
         - "33063:3306"
       volumes: 
         - sudukomysql:/var/lib/mysql
-          #- ./scripts/createuser.sql:/docker-entrypoint-initdb.d/1.sql
+        - ./scripts/createuser.sql:/docker-entrypoint-initdb.d/1.sql
       environment:
         MYSQL_ROOT_PASSWORD: tortola1 
         MYSQL_DATABASE: appdb
@@ -44,7 +44,7 @@ services:
       ports: 
         - "33062:3306"
       volumes: 
-        - sudukomysql2:/var/lib/mysql
+        - /home/dov/data/:/var/lib/mysql
       environment:
         MYSQL_ROOT_PASSWORD: tortola1 
         MYSQL_DATABASE: appdb
