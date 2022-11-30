@@ -41,6 +41,15 @@ services:
         MYSQL_DATABASE: appdb
 
 
+   olddb: 
+      image: mysql
+      ports: 
+        - "33061:3306"
+      volumes: 
+        - /home/dov/data/:/var/lib/mysql
+      environment:
+        MYSQL_ROOT_PASSWORD: tortola1 
+
 volumes:
    logs:
    static:
