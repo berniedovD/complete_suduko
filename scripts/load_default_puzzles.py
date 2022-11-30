@@ -11,7 +11,7 @@ from sqlalchemy.engine.url import URL
 
 
 hostname="54.158.55.239"
-dbport=r'33061'
+dbport=r'3306'
 database='appdb'
 username='appdbuser'
 password='tortola1'
@@ -29,9 +29,8 @@ dbconn = db_engine.connect()
 
 
 #%%    
-puzl  = pd.read_sql('select * from sudukoapi_puzzle', dbconn)
 
-print (puzl)
-puzl.to_csv('puz1.csv')
 
-puzl.to_sql('tab2', dbconn)
+
+newpuz = pd.read_csv('puz1.csv')
+newpuz.to_sql('sudukoapi_puzzle', dbconn, if_exists='append')
