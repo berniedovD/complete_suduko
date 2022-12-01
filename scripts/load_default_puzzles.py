@@ -34,4 +34,4 @@ dbconn = db_engine.connect()
 
 newpuz = pd.read_csv('./scripts/puzl.csv')
 newpuz.to_sql('sudukoapi_puzzle', dbconn, if_exists='append', index=False)
-print ('succesfully loaded puzzle database with default puzzles" )
+print ("succesfully loaded puzzle database with default puzzles" )
