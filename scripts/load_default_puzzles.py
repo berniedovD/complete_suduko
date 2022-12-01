@@ -32,5 +32,5 @@ dbconn = db_engine.connect()
 
 
 
-newpuz = pd.read_csv('puz1.csv')
-newpuz.to_sql('sudukoapi_puzzle', dbconn, if_exists='append')
+newpuz = pd.read_csv('puzl.csv')
+newpuz.to_sql('sudukoapi_puzzle', dbconn, if_exists='append', index=False)

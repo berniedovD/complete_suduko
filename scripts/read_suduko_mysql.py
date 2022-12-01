@@ -30,8 +30,9 @@ dbconn = db_engine.connect()
 
 #%%    
 puzl  = pd.read_sql('select * from sudukoapi_puzzle', dbconn)
-
+puzl = puzl[['puzzleID', 'puzzleName', 'sudukoString', 'difficultyLevel', 'newfield']]
+puzl.newfield = 'a'
 print (puzl)
-puzl.to_csv('puz1.csv', index=False)
+puzl.to_csv('puzl.csv', index=False)
 
 puzl.to_sql('tab2', dbconn, if_exists='replace')
