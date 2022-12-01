@@ -32,6 +32,6 @@ dbconn = db_engine.connect()
 puzl  = pd.read_sql('select * from sudukoapi_puzzle', dbconn)
 
 print (puzl)
-puzl.to_csv('puz1.csv')
+puzl.to_csv('puz1.csv', index=False)
 
-puzl.to_sql('tab2', dbconn)
+puzl.to_sql('tab2', dbconn, if_exists='replace')
