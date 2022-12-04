@@ -12,6 +12,9 @@ https://docs.djangoproject.com/en/4.0/ref/settings/
 
 from pathlib import Path
 import os
+import environ
+env = environ.Env()
+environ.Env.read_env()
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -85,6 +88,10 @@ DATABASES = {
     }
 }
 '''
+dbname = env('DBNAME')
+print ("before database settings")
+print (f'dbname={dbname}')
+
 DATABASES = {
     'sqlite': {
         'ENGINE': 'django.db.backends.sqlite3',
@@ -93,7 +100,7 @@ DATABASES = {
         
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'appdb',
+        'NAME': dbname,
         'USER': 'appdbuser',
         'PASSWORD': 'tortola1',
         'HOST': '54.158.55.239',
