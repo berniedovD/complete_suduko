@@ -89,6 +89,7 @@ DATABASES = {
 }
 '''
 dbname = env('DBNAME')
+dbuser=env('DBUSER')
 print ("before database settings")
 print (f'dbname={dbname}')
 
@@ -101,10 +102,10 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': dbname,
-        'USER': 'appdbuser',
-        'PASSWORD': 'tortola1',
-        'HOST': '54.158.55.239',
-        'PORT': '3306'
+        'USER': env('DBUSER'),
+        'PASSWORD': env('DBPASSWORD'),
+        'HOST': env('DBHOST'),
+        'PORT': env('DBPORT')
     }
 }
 
