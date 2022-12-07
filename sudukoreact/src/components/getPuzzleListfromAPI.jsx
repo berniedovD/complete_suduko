@@ -22,6 +22,9 @@ export function getPuzzleListfromAPI(
   }
   function failResp(rejectReason) {
     console.log(`failed to get json response`);
+    let puzzleList = loadDefaultPuzzle();
+    console.log(puzzleList);
+
     setPuzzleList(puzzleList);
     setDefault(true);
   }
