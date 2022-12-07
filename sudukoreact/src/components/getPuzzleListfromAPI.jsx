@@ -15,13 +15,15 @@ export function getPuzzleListfromAPI(
   }
 
   function fulFillResp(fResp) {
-    console.log("in fulFillResp");
+    console.log("in fulFillRespm success ");
     console.log(fResp);
     setPuzzleList(fResp);
     setDefault(false);
   }
   function failResp(rejectReason) {
     console.log(`failed to get json response`);
+    setPuzzleList(puzzleList);
+    setDefault(true);
   }
   function responseSuccess(fulfillmentValue) {
     console.log("in responseSuccess");
