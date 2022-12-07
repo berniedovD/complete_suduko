@@ -1,10 +1,11 @@
 import React, { useState } from "react";
 
+import { checkFullPuzzle } from "./sudukoHelperFunctions";
 import sudukoSolveOneCell from "./sudukoSolveOneCell";
 import LoadPuzzle from "./loadPuzzle";
-import { selectClickedCell } from "./selectClickedCell";
-import { checkFullPuzzle } from "./sudukoHelperFunctions";
+
 import { buildJustPuzzle } from "./buildJustPuzzle";
+import { selectClickedCell } from "./selectClickedCell";
 // eslint-disable-next-line
 function handleAutoButton(setAutoMode) {
   setAutoMode(true);
@@ -23,17 +24,15 @@ function autoSolve(setPuzzle, setDirection, puzzle, direction, autoMode) {
 }
 ///////////////////////////////////////////////////////////////////////
 function Suduko() {
+  // eslint-disable-next-line
+  function handleClickCell(row, col) {
+    return selectClickedCell(fullState, row, col);
+  }
   function handleAuto() {
     console.log("clicked auto");
     let [newPuzzle, newDirection] = sudukoSolveOneCell(puzzle, direction);
     setPuzzle(newPuzzle);
     setDirection(newDirection);
-  }
-  let HOST = "54.158.55.239";
-  console.log("Entering Suduko function");
-  // eslint-disable-next-line
-  function handleClickCell(row, col) {
-    return selectClickedCell(fullState, row, col);
   }
   console.log("top of Suduko function - top");
 
@@ -54,21 +53,6 @@ function Suduko() {
   };
 
   ///////
-  console.log(fullState);
-  let urlPrefix = "http://" + HOST;
-  let urlLoadPuzzle = urlPrefix + "/play";
-  let urlLoadFromDB = urlPrefix + "/loadDB";
-  /*
-  return (
-    <React.Fragment>
-      <h1>Dov Suduko V2.0</h1>
-      <p>Pick a location to load puzzles or just load the default:</p>
-      <a href={urlLoadFromDB}>Load Puzzle from Database</a>
-      <br></br>
-      <a href={urlLoadPuzzle}> Load Default</a>
-    </React.Fragment>
-  );
-  */
   if (puzzle.length !== 0) {
     console.log("Puzzle length NOT 0");
     console.log(`Puzzle length=${puzzle.length}`);
