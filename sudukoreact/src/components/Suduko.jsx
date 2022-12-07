@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 import sudukoSolveOneCell from "./sudukoSolveOneCell";
-
+import LoadPuzzle from "./loadPuzzle";
 import { selectClickedCell } from "./selectClickedCell";
 // eslint-disable-next-line
 function handleAutoButton(setAutoMode) {
@@ -50,6 +50,7 @@ function Suduko() {
   let urlPrefix = "http://" + HOST;
   let urlLoadPuzzle = urlPrefix + "/play";
   let urlLoadFromDB = urlPrefix + "/loadDB";
+  /*
   return (
     <React.Fragment>
       <h1>Dov Suduko V2.0</h1>
@@ -59,13 +60,13 @@ function Suduko() {
       <a href={urlLoadPuzzle}> Load Default</a>
     </React.Fragment>
   );
-  /*
+  */
+
   return (
     <React.Fragment>
       <LoadPuzzle setPuzzle={fullState.setPuzzle}></LoadPuzzle>
     </React.Fragment>
   );
-  */
 }
 
 export default Suduko;
