@@ -29,8 +29,21 @@ function Suduko() {
     setPuzzle(newPuzzle);
     setDirection(newDirection);
   }
-  let HOST = "54.158.55.239";
+  //let HOST = "54.158.55.239";
   console.log("Entering Suduko function");
+  let docURL = document.URL;
+  console.log(`URL=${docURL}`);
+  let p1 = /http:\/\/(.*)[:/]/;
+  p1 = /http:\/\/(\w+\.*\w*)[:/]+/;
+  const m1 = docURL.match(p1);
+  let uri;
+  if (m1 != null) {
+    uri = m1[1];
+    console.log(`uri from regex=${uri}`);
+  } else {
+    console.log(`could not parse URI from $docURL`);
+  }
+  console.log(`uri=${uri}`);
   // eslint-disable-next-line
   function handleClickCell(row, col) {
     return selectClickedCell(fullState, row, col);
@@ -55,9 +68,9 @@ function Suduko() {
 
   ///////
   console.log(fullState);
-  let urlPrefix = "http://" + HOST;
-  let urlLoadPuzzle = urlPrefix + "/play";
-  let urlLoadFromDB = urlPrefix + "/loadDB";
+  //let urlPrefix = "http://" + HOST;
+  //let urlLoadPuzzle = urlPrefix + "/play";
+  //let urlLoadFromDB = urlPrefix + "/loadDB";
   /*
   return (
     <React.Fragment>

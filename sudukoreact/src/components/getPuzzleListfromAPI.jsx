@@ -43,6 +43,24 @@ export function getPuzzleListfromAPI(
 
   let hostip = "54.224.90.36";
   hostip = "54.158.55.239";
+  let docURL = document.URL;
+  console.log(`URL=${docURL}`);
+  let p1 = /http:\/\/(.*)[:/]/;
+  p1 = /http:\/\/(\w+\.*\w*)[:/]+/;
+  const m1 = docURL.match(p1);
+  let uri;
+  if (m1 != null) {
+    uri = m1[1];
+    console.log(`uri from regex=${uri}`);
+  } else {
+    console.log(`could not parse URI from $docURL`);
+  }
+  console.log(`uri=${uri}`);
+  if (uri === "localhost") {
+  } else {
+    hostip = uri;
+  }
+
   URL = `http://${hostip}/suduko/puzzleDB`;
 
   console.log("in getPuzzleListfromAPI");
