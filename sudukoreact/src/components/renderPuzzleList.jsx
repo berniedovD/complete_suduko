@@ -26,12 +26,6 @@ function renderPuzzleList(
     <div>
       <h1>List of Puzzles from API </h1>
       <h1>Click on Puzzle ID to load puzzle</h1>
-      <button className="button-9" onClick={() => getDataWrap(puzzleList)}>
-        Get List of Puzzles from hardcoded backend
-      </button>
-      <button className="button-9" onClick={() => getDataWrap(puzzleList)}>
-        Get list of Puzzles From Database
-      </button>
     </div>
   );
   console.log(`DefaultPuzzle=${defaultPuzzle}`);
