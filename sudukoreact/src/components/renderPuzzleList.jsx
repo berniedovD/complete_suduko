@@ -48,7 +48,6 @@ function renderPuzzleList(
     <React.Fragment>
       {hdrElement}
       {tblElement}
-      <h1>THIS IS A TEST </h1>
     </React.Fragment>
   );
   return reactReturn;
