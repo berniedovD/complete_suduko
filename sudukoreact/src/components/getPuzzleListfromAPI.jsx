@@ -47,6 +47,8 @@ export function getPuzzleListfromAPI(
   console.log(`URL=${docURL}`);
   let p1 = /http:\/\/(.*)[:/]/;
   p1 = /http:\/\/(\w+\.*\w*)[:/]+/;
+  p1 = /http:\/\/([\w.]+)[/:]*/;
+  //docURL = "http://123.44.55.33/";
   const m1 = docURL.match(p1);
   let uri;
   if (m1 != null) {
