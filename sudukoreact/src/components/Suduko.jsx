@@ -78,22 +78,32 @@ function Suduko() {
     let htmlToRender = buildJustPuzzle(fullState, handleClickCell);
     let fullPage = (
       <React.Fragment>
-        <button className="button-9" onClick={handleAuto}>
-          Single Step Auto Solve
-        </button>
-        <button
-          className="button-9"
-          onClick={() => {
-            handleAutoButton(setAutoMode);
-          }}
-        >
-          Run Auto Solve
-        </button>
+        <div className="puzbuttons">
+          <h2>
+            To manually solve puzzle: click on cell or navigate to cells with
+            left and right buttons. Once cell is highlighted - type a number
+            from 1 -9 to fill cell - type 0 to empty cell.
+          </h2>
+          <div>
+            {" "}
+            <button className="button-9" onClick={handleAuto}>
+              Single Step Auto Solve
+            </button>
+          </div>
+          <div>
+            <button
+              className="button-9 bt-green"
+              onClick={() => {
+                handleAutoButton(setAutoMode);
+              }}
+            >
+              Run Auto Solve
+            </button>
+          </div>
+        </div>
         {htmlToRender}
-        <h1>V3</h1>
       </React.Fragment>
     );
-
     return fullPage;
   } else {
     console.log("No puzzle to render ");

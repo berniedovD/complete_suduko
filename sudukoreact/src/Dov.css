@@ -199,7 +199,7 @@
   font-family: -apple-system, system-ui, "Segoe UI", Roboto, "Helvetica Neue",
     Ubuntu, sans-serif;
   font-size: 100%;
-  height: 44px;
+
   line-height: 1.15;
   margin: 12px 0 0;
   outline: none;
@@ -214,6 +214,11 @@
   -webkit-user-select: none;
   touch-action: manipulation;
   width: 100%;
+  height: 50px;
+  margin: 10px;
+}
+.bt-green {
+  background-color: green;
 }
 .button-9-red {
   appearance: button;
@@ -289,4 +294,7 @@
 .puzzle-table tbody tr.active-row {
   background-color: rgb(84, 212, 24);
   font-weight: bold;
+}
+.puzbuttons {
+  width: 50%;
 }
