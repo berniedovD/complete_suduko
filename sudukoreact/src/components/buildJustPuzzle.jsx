@@ -34,7 +34,11 @@ function buildJustPuzzle(fullState, clickCell) {
   }
 
   return (
-    <span tabIndex="0" onKeyDown={(e) => handleKeyDownPre(e)}>
+    <span
+      tabIndex="0"
+      onKeyDown={(e) => handleKeyDownPre(e)}
+      style={{ float: "right", margin: 0 }}
+    >
       <div>
         <h1 className={pStateClass}>PUZZLE is {pValid}</h1>
       </div>
