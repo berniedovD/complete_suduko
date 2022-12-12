@@ -39,7 +39,7 @@ function buildJustPuzzle(fullState, clickCell) {
       tabIndex="0"
       onKeyDown={(e) => handleKeyDownPre(e)}
     >
-      <div>
+      <div className="flex-child" style={{ width: "100%" }}>
         <h1 className={pStateClass}>PUZZLE is {pValid}</h1>
       </div>
       <div className="dov-div">{puzzleTable}</div>

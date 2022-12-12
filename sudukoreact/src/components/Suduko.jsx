@@ -79,7 +79,7 @@ function Suduko() {
     let fullPage = (
       <React.Fragment>
         <span className="flex-parent">
-          <div className="flex-child">
+          <span className="flex-child">
             <h2>
               To manually solve puzzle: click on cell or navigate to cells with
               left and right buttons. Once cell is highlighted - type a number
@@ -101,8 +101,8 @@ function Suduko() {
                 Run Auto Solve
               </button>
             </div>
-          </div>
-          {htmlToRender}
+          </span>
+          <span className="flex-child">{htmlToRender}</span>
         </span>
       </React.Fragment>
     );
