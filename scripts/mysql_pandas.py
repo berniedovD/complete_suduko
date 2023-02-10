@@ -19,6 +19,6 @@ db_engine = create_engine(dburl)
 
 dbconn = db_engine.connect()
 
-puzlist = pd.read_sql('select * from sudukoapi_puzzle', con=dbconn)
+puzlist = pd.read_sql('select * from sudukoapi_puzzle', dbconn)
 
 print (puzlist)
