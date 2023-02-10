@@ -10,6 +10,8 @@ services:
        - djangologs:/logs/:rw
      environment:
        DJANGO_SUPERUSER_PASSWORD: tortola1
+     env_file:
+       - ./project3/.env
      depends_on:
        - mysqldb
 
