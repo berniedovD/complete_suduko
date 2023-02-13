@@ -81,7 +81,7 @@ function Suduko() {
         <span className="flex-parent">
           <span className="flex-child">
             <h2>
-              DOV v1 To manually solve puzzle: click on cell or navigate to
+              DOV v2 To manually solve puzzle: click on cell or navigate to
               cells with left and right buttons. Once cell is highlighted - type
               a number from 1 -9 to fill cell - type 0 to empty cell.
             </h2>
