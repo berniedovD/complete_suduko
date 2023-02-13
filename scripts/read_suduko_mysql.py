@@ -10,8 +10,8 @@ from sqlalchemy import create_engine
 from sqlalchemy.engine.url import URL
 
 
-hostname="54.158.55.239"
-dbport=r'33061'
+hostname="66.23.227.5"
+dbport=r'3306'
 database='appdb'
 username='appdbuser'
 password='tortola1'
