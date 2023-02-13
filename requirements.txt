@@ -4,5 +4,5 @@ mysqlclient
 pymysql
 djangorestframework
 pandas
-sqlalchemy
+sqlalchemy==1.4.46
 django-environ

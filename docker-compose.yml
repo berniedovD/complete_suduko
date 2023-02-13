@@ -30,6 +30,11 @@ services:
      depends_on:
        - app
 
+   npm:
+     build: 
+      context: ./sudukoreact
+     volumes: 
+      - ./sudukoreact/:/app/:rw
 
 
    mysqldb: 
@@ -42,6 +47,7 @@ services:
       environment:
         MYSQL_ROOT_PASSWORD: tortola1 
         MYSQL_DATABASE: appdb
+      command: mysqld --general-log=1 --general-log-file=/var/lib/mysql/general-log.log
 
 
    olddb: 
