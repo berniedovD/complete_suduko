@@ -5,10 +5,8 @@ Created on Wed Oct 13 16:47:06 2021
 @author: medadocadmin
 """
 import pandas as pd
-
 from sqlalchemy import create_engine
 from sqlalchemy.engine.url import URL
-
 
 hostname="dovbear.org"
 dbport=r'3306'

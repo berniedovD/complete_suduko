@@ -16,7 +16,7 @@ dburl = URL.create('mysql',
                               username=dbuser,
                               password=dbpwd)
 db_engine = create_engine(dburl)
-
+#%%
 dbconn = db_engine.connect()
 #%%
 puzcsv = r'C:/Users/medadocadmin/Documents/DovClean/project3/scripts/puz1.csv'
