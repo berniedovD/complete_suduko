@@ -33,22 +33,12 @@ export function getPuzzleListfromAPI(
     let p2 = fulfillmentValue.json();
     p2.then(fulFillResp, failResp);
   }
-  let URL = "http://127.0.0.1:9000/suduko/puzzles";
-  URL = "http://127.0.0.1:9000/suduko/puzzleDB";
-  URL = "http://52.87.211.153:8000/suduko/puzzleDB";
-  URL = "http://107.23.231.158:8000/suduko/puzzleDB";
-  URL = "http://35.153.177.177:8000/suduko/puzzleDB";
-  URL = "http://52.90.144.5/suduko/puzzleDB";
-  URL = "http://54.158.55.239/suduko/puzzleDB";
 
-  let hostip = "54.224.90.36";
-  hostip = "54.158.55.239";
   let docURL = document.URL;
   console.log(`URL=${docURL}`);
-  let p1 = /http:\/\/(.*)[:/]/;
-  p1 = /http:\/\/(\w+\.*\w*)[:/]+/;
-  p1 = /http:\/\/([\w.]+)[/:]*/;
-  //docURL = "http://123.44.55.33/";
+
+  const p1 = /http:\/\/([\w.]+)[/:]*/;
+
   const m1 = docURL.match(p1);
   let uri;
   if (m1 != null) {
