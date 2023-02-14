@@ -6,8 +6,8 @@ services:
      ports:
        - "8000:8888"
      volumes:
-       - static:/usr/src/app/static/:rw
-       - djangologs:/logs/:rw
+       - ./static/:/usr/src/app/static/:rw
+       - ./app_logs/:/logs/:rw
        - ./scripts/:/pyscripts/:rw
      environment:
        DJANGO_SUPERUSER_PASSWORD: tortola1
@@ -22,7 +22,7 @@ services:
      ports:
        - "9000:80"
      volumes:
-       - static:/usr/src/app/static/:rw
+       - ./static/:/usr/src/app/static/:rw
        - ./logs/:/var/log/nginx/:rw
        - ./sudukoreact/build/:/usr/share/nginx/html/:ro
        - ./nginx/samplehtml/:/usr/share/nginx/samplehtml/:ro
@@ -42,7 +42,7 @@ services:
       ports: 
         - "3306:3306"
       volumes: 
-        - sudukomysql:/var/lib/mysql
+        - mysqldb:/var/lib/mysql
         - ./scripts/createuser.sql:/docker-entrypoint-initdb.d/1.sql
       environment:
         MYSQL_ROOT_PASSWORD: tortola1 
@@ -60,9 +60,4 @@ services:
         MYSQL_ROOT_PASSWORD: tortola1 
 
 volumes:
-   logs:
-   static:
-   djangologs:
-   sudukomysql:
-   sudukomysql2:
-
+  mysqldb:
