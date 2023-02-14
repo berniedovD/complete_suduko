@@ -41,6 +41,7 @@ export function getPuzzleListfromAPI(
 
   const m1 = docURL.match(p1);
   let uri;
+  let hostip = "dovbear.org";
   if (m1 != null) {
     uri = m1[1];
     console.log(`uri from regex=${uri}`);
@@ -53,11 +54,11 @@ export function getPuzzleListfromAPI(
     hostip = uri;
   }
 
-  URL = `http://${hostip}/suduko/puzzleDB`;
+  let URLbe = `http://${hostip}/suduko/puzzleDB`;
 
   console.log("in getPuzzleListfromAPI");
   console.log("running new version 10/30/2022");
   console.log(`before fetch URL=${URL}`);
 
-  fetch(URL).then(responseSuccess, responseFail);
+  fetch(URLbe).then(responseSuccess, responseFail);
 }
