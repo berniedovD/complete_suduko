@@ -12,7 +12,7 @@ COPY ${APP_SRC}/package.json ./
 COPY ${APP_SRC}/package-lock.json ./
 
 # run npm build
-#ENV PATH /app/node_modules/.bin:$PATH
+ENV PATH /app/node_modules/.bin:$PATH
 #RUN npm ci
 
 COPY ${APP_SRC} /app
