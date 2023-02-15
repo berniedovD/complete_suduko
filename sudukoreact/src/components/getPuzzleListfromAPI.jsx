@@ -47,6 +47,7 @@ export function getPuzzleListfromAPI(
     console.log(`uri from regex=${uri}`);
   } else {
     console.log(`could not parse URI from $docURL`);
+    uri = "dovbear.org";
   }
   console.log(`uri=${uri}`);
   if (uri === "localhost") {
@@ -58,7 +59,7 @@ export function getPuzzleListfromAPI(
 
   console.log("in getPuzzleListfromAPI");
   console.log("running new version 10/30/2022");
-  console.log(`before fetch URL=${URL}`);
+  console.log(`before fetch URL=${URLbe}`);
 
   fetch(URLbe).then(responseSuccess, responseFail);
 }
