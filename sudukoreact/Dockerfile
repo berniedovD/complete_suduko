@@ -19,4 +19,6 @@ COPY ${APP_SRC} /app
 
 #RUN rm -rf /app/build
 #RUN npm run build
-CMD tail -f /dev/null
+RUN chmod 777 ./entrypoint.sh
+ENTRYPOINT ./entrypoint.sh
+#CMD tail -f /dev/null
