@@ -1,62 +1,61 @@
-version: '3.6'
+version: "3.6"
 services:
-   app:
-     build:
+  app:
+    build:
       context: .
-     ports:
-       - "8000:8888"
-     volumes:
-       - ./static/:/usr/src/app/static/:rw
-       - ./app_logs/:/logs/:rw
-       - ./scripts/:/pyscripts/:rw
-     environment:
-       DJANGO_SUPERUSER_PASSWORD: tortola1
-     env_file:
-       - ./project3/.env
-     depends_on:
-       - mysqldb
+    ports:
+      - "8000:8888"
+    volumes:
+      - ./static/:/usr/src/app/static/:rw
+      - ./app_logs/:/logs/:rw
+      - ./scripts/:/pyscripts/:rw
+    environment:
+      DJANGO_SUPERUSER_PASSWORD: tortola1
+    env_file:
+      - ./project3/.env
+    depends_on:
+      - mysqldb
 
-   nginx:
-     build:
+  nginx:
+    build:
       context: ./nginx
-     ports:
-       - "80:80"
-     volumes:
-       - ./logs/:/var/log/nginx/:rw
-       - ./sudukoreact/build/:/usr/share/nginx/html/:ro
-       - ./nginx/samplehtml/:/usr/share/nginx/samplehtml/:ro
-         #- ./nginx/samplehtml/:/usr/share/nginx/html/:ro
-     depends_on:
-       - app
+    ports:
+      - "80:80"
+    volumes:
+      - ./logs/:/var/log/nginx/:rw
+      - ./static/:/usr/src/app/static/:rw
+      - ./sudukoreact/build/:/usr/share/nginx/html/:ro
+      - ./nginx/samplehtml/:/usr/share/nginx/samplehtml/:ro
+        #- ./nginx/samplehtml/:/usr/share/nginx/html/:ro
+    depends_on:
+      - app
 
-   npm:
-     build: 
+  npm:
+    build:
       context: ./sudukoreact
-     volumes: 
+    volumes:
       - ./sudukoreact/:/app/:rw
 
+  mysqldb:
+    image: mysql
+    ports:
+      - "3306:3306"
+    volumes:
+      - mysqldb:/var/lib/mysql
+      - ./scripts/createuser.sql:/docker-entrypoint-initdb.d/1.sql
+    environment:
+      MYSQL_ROOT_PASSWORD: tortola1
+      MYSQL_DATABASE: appdb
+    command: mysqld --general-log=1 --general-log-file=/var/lib/mysql/general-log.log
 
-   mysqldb: 
-      image: mysql
-      ports: 
-        - "3306:3306"
-      volumes: 
-        - mysqldb:/var/lib/mysql
-        - ./scripts/createuser.sql:/docker-entrypoint-initdb.d/1.sql
-      environment:
-        MYSQL_ROOT_PASSWORD: tortola1 
-        MYSQL_DATABASE: appdb
-      command: mysqld --general-log=1 --general-log-file=/var/lib/mysql/general-log.log
-
-
-   olddb: 
-      image: mysql
-      ports: 
-        - "33061:3306"
-      volumes: 
-        - /home/dov/data/:/var/lib/mysql
-      environment:
-        MYSQL_ROOT_PASSWORD: tortola1 
+  olddb:
+    image: mysql
+    ports:
+      - "33061:3306"
+    volumes:
+      - /home/dov/data/:/var/lib/mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: tortola1
 
 volumes:
   mysqldb:
