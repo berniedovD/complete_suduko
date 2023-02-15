@@ -37,7 +37,7 @@ export function getPuzzleListfromAPI(
   let docURL = document.URL;
   console.log(`URL=${docURL}`);
 
-  const p1 = /http:\/\/([\w.]+)[/:]*/;
+  const p1 = /https:\/\/([\w.]+)[/:]*/;
 
   const m1 = docURL.match(p1);
   let uri;
