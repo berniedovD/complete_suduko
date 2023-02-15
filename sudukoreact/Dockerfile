@@ -1,5 +1,5 @@
 # Dockerfile for linesheet frontend app
-FROM node:12
+FROM node
 ARG APP_SRC=./
 
 # Install system dependencies (as root)
